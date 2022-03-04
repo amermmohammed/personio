@@ -204,11 +204,16 @@ body {
 }
 
 .our-portfolio #portfolio-gallery .hidden {
-    display: none;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition-timing-function: linear, step-end;
 
 }
 .our-portfolio #portfolio-gallery .displayed {
-    display: flex;
+    max-width: 100%;
+    height: auto;
+    transition: opacity 3s linear, height 3s step-start;
 }
 
 
