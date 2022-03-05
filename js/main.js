@@ -1,7 +1,9 @@
+
+/*Load more and load less function Start*/
 let countUp = 0;
 let firstRow = document.querySelectorAll('div.hiddenGallery1');
-let secondRow = document.querySelectorAll('div.hiddenGallery2');;
-let thirdRow = document.querySelectorAll('div.hiddenGallery3');;
+let secondRow = document.querySelectorAll('div.hiddenGallery2');
+let thirdRow = document.querySelectorAll('div.hiddenGallery3');
 let loadMoreButton = document.getElementById('loadMore');
 let loadLessButton = document.getElementById('loadLess');
 
@@ -34,4 +36,36 @@ function loadLess() {
     loadLessButton.classList.replace('d-flex', 'd-none');
     countUp = 0;
 }
+/*Load more and load less function End*/
 
+/*Skills Progress bars Settings Start*/
+let startColor = $('.active').css('color');
+let endColor = $('.active').css('color');
+let skillList = ['Html', 'Css', 'js', 'Saas', 'NodeJS', 'PHP'];
+
+$('.skill').each(function(i) {
+    let circle = new ProgressBar.Circle(this, {
+        color: startColor,
+        easing: 'bounce',
+        strokeWidth: 8,
+        duration: 8000,
+        text: {
+            value: '0'
+        }
+    });
+    let value = ($(this).attr('value') / 100);
+    circle.text.style.fontSize = '2rem';
+    circle.animate(value, {
+        from: {
+            color: startColor
+        },
+        to: {
+            color: endColor
+        },
+        step: function(state, circle, bar) {
+            circle.path.setAttribute('stroke', state.color);
+            circle.setText((circle.value() * 100).toFixed(0) + ' %' + `<div class="skill-des text-center text-uppercase fs-4">${skillList[i]}</div>`);
+        }
+    });
+});
+/*Skills Progress bars Settings End*/
