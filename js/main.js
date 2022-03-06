@@ -69,10 +69,11 @@ $('.skill').each(function(i) {
                     circle.setText((circle.value() * 100).toFixed(0) + ' %' + `<div class="skill-des text-center text-uppercase fs-4">${skillList[i]}</div>`);
                 }
             });
-            AOS.init({
-                duration: 2000,
-            })
         }
     });
+    AOS.init({
+        duration: 2000,
+    })
 });
 /*Skills Progress bars Settings End*/
+

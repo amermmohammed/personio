@@ -217,9 +217,87 @@ body {
     transition: opacity 3s linear, height 3s step-start;
 }
 /*Portfolio Section end*/
-/*Skills Section Start*/
+/*Skills Section setting*/
 .progress-bar-color-control {
     background-color: var(--personio-primary-light);
     color: var(--personio-outline);
 }
 /*Skills Section End*/
+
+/*Clients Section setting*/
+.client-section {
+    background-color: var(--personio-secondary-light);
+}
+.client-section .main-title h2 {
+    color: var(--personio-secondary-dark);
+}
+/* Slider */
+.slides-main-container {
+    background-color: var(--personio-secondary-light);
+    height: 50px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+.slides-main-container .slides-holder {
+    -webkit-animation: sliding 30s linear infinite;
+    animation: sliding 30s linear infinite;
+    display: -webkit-box;
+    display: flex;
+    /*width must be equal to the product of 250 with items amount here we have 32*/
+    width: calc(250px * 32);
+}
+.slides-main-container .slider-item {
+    height: 100px;
+    width: 250px;
+}
+.slides-main-container .slider-item img{
+    height: 50px;
+    width: 90px;
+    opacity: 1;
+    transition: 1s ease;
+}
+.slides-main-container .slider-item img:hover{
+    opacity: .2;
+}
+@-webkit-keyframes sliding {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        /*transform must be the product of 250 with half of items amount*/
+        -webkit-transform: translateX(calc(-250px * 16));
+        transform: translateX(calc(-250px * 16));
+    }
+}
+@keyframes sliding {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        /*transform must be the product of 250 with half of items amount*/
+        -webkit-transform: translateX(calc(-250px * 16));
+        transform: translateX(calc(-250px * 16));
+    }
+}
+/* Slider */
+
+/*Clients Section end*/
+/*Phone Landscape Viewport Width*/
+@media screen and(min-width: 30em) {
+
+}
+/*Tablet Viewport Width*/
+@media screen and(min-width: 48em) {
+
+}
+/*Tablet Landscape Viewport Width*/
+@media screen and(min-width: 64em) {
+
+}
+/*Desktop Viewport Width*/
+@media screen and(min-width: 78.75em) {
+
+}
