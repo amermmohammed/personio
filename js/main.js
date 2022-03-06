@@ -54,7 +54,6 @@ $('.skill').each(function(i) {
         }
     });
     let value = ($(this).attr('value') / 100);
-    circle.text.style.fontSize = '2rem';
     $(window).scroll(function() {
         if ($('#skills').is(':visible')) {
             circle.animate(value, {
@@ -66,7 +65,7 @@ $('.skill').each(function(i) {
                 },
                 step: function(state, circle) {
                     circle.path.setAttribute('stroke', state.color);
-                    circle.setText((circle.value() * 100).toFixed(0) + ' %' + `<div class="skill-des text-center text-uppercase fs-4">${skillList[i]}</div>`);
+                    circle.setText(`<span class="d-none d-md-block fs-3">` + (circle.value() * 100).toFixed(0) + ' %' + `</span><div class="skill-des text-center text-uppercase fs-5">${skillList[i]}</div>`);
                 }
             });
         }

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1000 200">
+  <g fill="none" mask="url(&quot;#a&quot;)">
+    <path stroke="rgba(189, 186, 186, 1)" d="M692 101h12v12h-12z"/>
+    <path fill="rgba(20, 33, 61, 1)" d="M469 4a8 8 0 1 0 17 0 8 8 0 1 0-17 0z"/>
+    <path stroke="rgba(20, 33, 61, 0.0392156862745098)" d="M679 83a14 14 0 1 0 29-2z"/>
+    <path fill="rgba(20, 33, 61, 1)" d="M348 6h8v8h-8zM174 140h18v19h-18zm273-96h17v17h-17z"/>
+    <path fill="rgba(255, 255, 255, 1)" d="M208 97h18v2h-18z"/>
+    <path fill="rgba(252, 163, 17, 0.09803921568627451)" d="M102 36a16 16 0 1 0 32 0 16 16 0 1 0-32 0z"/>
+    <path stroke="rgba(189, 186, 186, 1)" d="M953 29h12v12h-12z"/>
+    <path fill="rgba(20, 33, 61, 0.0392156862745098)" d="M170 46a12 12 0 1 0 24 0 12 12 0 1 0-24 0z"/>
+    <path stroke="rgba(20, 33, 61, 1)" d="M692 23a14 14 0 1 0 18 22z"/>
+    <path fill="rgba(20, 33, 61, 1)" d="M836 135a19 19 0 1 0 38 0 19 19 0 1 0-38 0z"/>
+    <path stroke="rgba(252, 163, 17, 0.09803921568627451)" d="M585 181h6v7h-6z"/>
+    <path stroke="rgba(20, 33, 61, 0.0392156862745098)" d="M736 195a15 15 0 1 0 30 0 15 15 0 1 0-30 0z"/>
+    <path stroke="rgba(189, 186, 186, 1)" d="M230 131z"/>
+    <path fill="rgba(255, 255, 255, 1)" d="M279 13h13v14h-13z"/>
+    <path stroke="rgba(252, 163, 17, 1)" d="M1 13h8v9H1z"/>
+    <path stroke="rgba(189, 186, 186, 1)" d="M890 155a19 19 0 1 0-34-13z"/>
+    <path fill="rgba(252, 163, 17, 0.09803921568627451)" d="M107 75a13 13 0 1 0 26-5z"/>
+    <path fill="rgba(189, 186, 186, 1)" d="M48 88h3v3h-3z"/>
+    <path stroke="rgba(252, 163, 17, 0.09803921568627451)" d="M756 96h15v12h-15z"/>
+    <path stroke="rgba(189, 186, 186, 1)" d="M674 59h2v10h-2z"/>
+    <path fill="rgba(20, 33, 61, 0.0392156862745098)" d="M597 127a4 4 0 1 0 8 0 4 4 0 1 0-8 0z"/>
+    <path fill="rgba(189, 186, 186, 1)" d="M297 4h11v11h-11z"/>
+    <path stroke="rgba(252, 163, 17, 1)" d="M921 179a17 17 0 1 0 34 0 17 17 0 1 0-34 0z"/>
+    <path stroke="rgba(189, 186, 186, 1)" d="M949 34a10 10 0 1 0-16-11zM64 113a9 9 0 1 0 19 0 9 9 0 1 0-19 0zm480-7a6 6 0 1 0 5-12z"/>
+    <path fill="rgba(252, 163, 17, 0.09803921568627451)" d="M63 97a9 9 0 1 0 17 0 9 9 0 1 0-17 0z"/>
+    <path fill="rgba(252, 163, 17, 1)" d="M197 131a14 14 0 1 0-25 13z"/>
+    <path fill="rgba(252, 163, 17, 0.09803921568627451)" d="M709 143a7 7 0 1 0-3-13z"/>
+    <path stroke="rgba(252, 163, 17, 1)" d="M667 37h6v6h-6z"/>
+    <path stroke="rgba(252, 163, 17, 0.09803921568627451)" d="M444 141a8 8 0 1 0 17 0 8 8 0 1 0-17 0zm317 46h13v3h-13z"/>
+    <path stroke="rgba(20, 33, 61, 1)" d="M301 200a2 2 0 1 0 4 0 2 2 0 1 0-4 0z"/>
+    <path fill="rgba(189, 186, 186, 1)" d="M431 9h2v2h-2z"/>
+    <path fill="rgba(252, 163, 17, 0.09803921568627451)" d="M814 176a7 7 0 1 0 13 4z"/>
+    <path fill="rgba(252, 163, 17, 1)" d="M780 69a16 16 0 1 0-28-14z"/>
+    <path stroke="rgba(255, 255, 255, 1)" d="M44 181a12 12 0 1 0 23 2z"/>
+    <path fill="rgba(252, 163, 17, 1)" d="M445 37a4 4 0 1 0-8 2z"/>
+    <path fill="rgba(252, 163, 17, 0.09803921568627451)" d="M683 45h1v16h-1z"/>
+    <path fill="rgba(255, 255, 255, 1)" d="M24 3h7v7h-7z"/>
+    <path fill="rgba(189, 186, 186, 1)" d="M601 121a19 19 0 1 0 38 0 19 19 0 1 0-38 0z"/>
+    <path stroke="rgba(20, 33, 61, 1)" d="M317 171h6v4h-6z"/>
+    <path fill="rgba(189, 186, 186, 1)" d="M561 80a13 13 0 1 0 25 0 13 13 0 1 0-25 0z"/>
+    <path stroke="rgba(20, 33, 61, 0.0392156862745098)" d="M252 196a5 5 0 1 0-10-5z"/>
+    <path fill="rgba(20, 33, 61, 1)" d="M654 101h11v10h-11z"/>
+    <path fill="rgba(189, 186, 186, 1)" d="M852 58h9v9h-9z"/>
+    <path stroke="rgba(252, 163, 17, 0.09803921568627451)" d="M66 63h6v6h-6z"/>
+    <path stroke="rgba(189, 186, 186, 1)" d="M713 33a3 3 0 1 0 7 0 3 3 0 1 0-7 0z"/>
+    <path stroke="rgba(252, 163, 17, 1)" d="M145 10h18v18h-18z"/>
+    <path fill="rgba(189, 186, 186, 1)" d="M152 110h16v4h-16z"/>
+    <path fill="rgba(255, 255, 255, 1)" d="M367 118h4v5h-4z"/>
+    <path stroke="rgba(252, 163, 17, 1)" d="M544 1h10v10h-10z"/>
+    <path stroke="rgba(20, 33, 61, 0.0392156862745098)" d="M489 72a9 9 0 1 0 17 6z"/>
+    <path stroke="rgba(252, 163, 17, 0.09803921568627451)" d="M97 177h16v16H97z"/>
+    <path stroke="rgba(252, 163, 17, 1)" d="M265 36h8v8h-8z"/>
+    <path fill="rgba(20, 33, 61, 1)" d="M474 93h17v17h-17z"/>
+    <path stroke="rgba(255, 255, 255, 1)" d="M22 52h20v19H22z"/>
+    <path stroke="rgba(189, 186, 186, 1)" d="M829 188h9v10h-9z"/>
+    <path stroke="rgba(20, 33, 61, 1)" d="M200 152a15 15 0 1 0-26 13z"/>
+    <path stroke="rgba(20, 33, 61, 0.0392156862745098)" d="M735 151a11 11 0 1 0 22 0 11 11 0 1 0-22 0z"/>
+    <path fill="rgba(20, 33, 61, 1)" d="M158 32h12v13h-12z"/>
+  </g>
+  <defs>
+    <mask id="a">
+      <path fill="#fff" d="M0 0h1000v200H0z"/>
+    </mask>
+  </defs>
+</svg>
