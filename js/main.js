@@ -1,4 +1,3 @@
-
 /*Load more and load less function Start*/
 let countUp = 0;
 let firstRow = document.querySelectorAll('div.hiddenGallery1');
@@ -39,9 +38,10 @@ function loadLess() {
 /*Load more and load less function End*/
 
 /*Skills Progress bars Settings Start*/
-let startColor = $('.active').css('color');
-let endColor = $('.active').css('color');
 let skillList = ['Html', 'Css', 'js', 'Saas', 'NodeJS', 'PHP'];
+let barColorSource = $('.progress-bar-color-control');
+let startColor = barColorSource.css('background-color');
+let endColor = barColorSource.css('color');
 
 $('.skill').each(function(i) {
     let circle = new ProgressBar.Circle(this, {
@@ -55,16 +55,23 @@ $('.skill').each(function(i) {
     });
     let value = ($(this).attr('value') / 100);
     circle.text.style.fontSize = '2rem';
-    circle.animate(value, {
-        from: {
-            color: startColor
-        },
-        to: {
-            color: endColor
-        },
-        step: function(state, circle, bar) {
-            circle.path.setAttribute('stroke', state.color);
-            circle.setText((circle.value() * 100).toFixed(0) + ' %' + `<div class="skill-des text-center text-uppercase fs-4">${skillList[i]}</div>`);
+    $(window).scroll(function() {
+        if ($('#skills').is(':visible')) {
+            circle.animate(value, {
+                from: {
+                    color: startColor
+                },
+                to: {
+                    color: endColor
+                },
+                step: function(state, circle) {
+                    circle.path.setAttribute('stroke', state.color);
+                    circle.setText((circle.value() * 100).toFixed(0) + ' %' + `<div class="skill-des text-center text-uppercase fs-4">${skillList[i]}</div>`);
+                }
+            });
+            AOS.init({
+                duration: 2000,
+            })
         }
     });
 });
