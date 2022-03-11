@@ -80,4 +80,3 @@ $('.skill').each(function (i) {
 /*Footer copy right content*/
 $("#copy-right").text("Made with ❤ by Amer " + (new Date).getFullYear());
 
-

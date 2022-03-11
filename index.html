@@ -38,21 +38,24 @@
                     <a class="nav-link p-lg-3 p-2 active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link p-lg-3 p-2" href="#">Services</a>
+                    <a class="nav-link p-lg-3 p-2" href="#features">features</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link p-lg-3 p-2" href="#">Portfolio</a>
+                    <a class="nav-link p-lg-3 p-2" href="#service">Service</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link p-lg-3 p-2" href="#">About</a>
+                    <a class="nav-link p-lg-3 p-2" href="#blog">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link p-lg-3 p-2" href="#">Contact</a>
+                    <a class="nav-link p-lg-3 p-2" href="#Portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-lg-3 p-2" href="#skills">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-lg-3 p-2" href="#Contact">Contact</a>
                 </li>
             </ul>
-            <div class="search px-3 d-none d-lg-block">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
             <a class="btn btn-primary custom-btn rounded-pill" href="#">العربية</a>
         </div>
     </div>
@@ -69,7 +72,7 @@
 </section>
 <!--Main section end-->
 <!--Services Section begin-->
-<section class="features text-center">
+<section id="features" class="features text-center">
     <div class="container py-5">
         <div class="main-title pt-5 my-5 position-relative">
             <h2 class="mt-5 text-uppercase">I offer you</h2>
@@ -152,8 +155,168 @@
     </div>
 </section>
 <!--Services Section end-->
+<!--Contact Options Section begin-->
+<section id="service" class="contact-options-section text-center py-5">
+    <div id="contact-options" class="container py-5">
+        <div class="main-title my-5 py-5 position-relative">
+            <h2 class="mt-5 text-uppercase">get in touch with me</h2>
+            <p class="text-white-50 text-uppercase">I'm available on the following Platforms</p>
+        </div>
+        <div class="row mb-5">
+            <div class="col-6 platforms">
+                <a href="https://mostaql.com/" target="_blank">
+                    <img src="imgs/icons/mostaql-logo-white.svg" alt="platform-logo">
+                </a>
+                <a href="https://mostaql.com/" target="_blank">
+                    <img src="imgs/icons/mostaql-logo-white.svg" alt="platform-logo">
+                </a>
+            </div>
+            <div class="col-6 platforms">
+                <a href="https://mostaql.com/" target="_blank">
+                    <img src="imgs/icons/mostaql-logo-white.svg" alt="platform-logo">
+                </a>
+                <a href="https://mostaql.com/" target="_blank">
+                    <img src="imgs/icons/mostaql-logo-white.svg" alt="platform-logo">
+                </a>
+            </div>
+            <div class="col-12">
+                <h2 class="mt-5 text-uppercase fs-4">Other Contact options</h2>
+                <a href="mailto:info@example.com" id="contact-icon"
+                   class="btn btn-primary custom-btn rounded-pill text-uppercase fs-3 me-0 me-md-2 mb-1 mb-sm-0">send
+                    Email</a>
+                <a href="https://api.whatsapp.com/send?phone=0000000000&amp;text=Hi, I got this phone number from you website"
+                   id="Whatsapp" class="btn btn-primary whatsapp-btn rounded-pill text-uppercase fs-3">Whatsapp</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Contact Options Section end-->
+<!--Blog Section begin-->
+<section id="blog" class="blog text-center mb-5">
+    <div class="main-title my-5 position-relative">
+        <h2 class="mt-5 text-uppercase">Blog</h2>
+        <p class="text-white-50 text-uppercase">read last articles</p>
+    </div>
+    <div class="container">
+        <div class="row mx-auto">
+            <div class="col-12 col-md-6 col-lg-3 mb-3">
+                <div class="card">
+                    <img src="https://picsum.photos/id/1/400/200    " class="card-img-top" alt="post-image">
+                    <div class="card-body">
+                        <h5 class="card-title">First Post</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button type="button" class="btn btn-primary custom-btn rounded-pill text-uppercase" data-bs-toggle="modal" data-bs-target="#blog1" >Read more!</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="blog1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="postTitle1" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <img src="https://picsum.photos/id/1/400/200" class="img-fluid" alt="post-image">
+                                        <h5 class="modal-title" id="postTitle1">First Post</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary custom-btn rounded-pill text-uppercase" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-3">
+                <div class="card">
+                    <img src="https://picsum.photos/id/2/400/200" class="card-img-top" alt="post-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Second Post</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button type="button" class="btn btn-primary custom-btn rounded-pill text-uppercase" data-bs-toggle="modal" data-bs-target="#blog2" >Read more!</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="blog2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="postTitle2" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <img src="https://picsum.photos/id/2/400/200" class="img-fluid" alt="post-image">
+                                        <h5 class="modal-title" id="postTitle2">Second Post</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary custom-btn rounded-pill text-uppercase" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-3">
+                <div class="card">
+                    <img src="https://picsum.photos/id/3/400/200" class="card-img-top" alt="post-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Third Post</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button type="button" class="btn btn-primary custom-btn rounded-pill text-uppercase" data-bs-toggle="modal" data-bs-target="#blog3" >Read more!</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="blog3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="postTitle3" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <img src="https://picsum.photos/id/3/400/200" class="img-fluid" alt="post-image">
+                                        <h5 class="modal-title" id="postTitle3">Third Post</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary custom-btn rounded-pill text-uppercase" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mb-3">
+                <div class="card">
+                    <img src="https://picsum.photos/id/4/400/200" class="card-img-top" alt="post-image">
+                    <div class="card-body">
+                        <h5 class="card-title">Last Post</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button type="button" class="btn btn-primary custom-btn rounded-pill text-uppercase" data-bs-toggle="modal" data-bs-target="#blog4" >Read more!</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="blog4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="postTitle4" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <img src="https://picsum.photos/id/4/400/200" class="img-fluid" alt="post-image">
+                                        <h5 class="modal-title" id="postTitle4">Last Post</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary custom-btn rounded-pill text-uppercase" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Blog Section end-->
 <!--Portfolio Section begin-->
-<section class="portfolio text-center py-5">
+<section id="Portfolio" class="portfolio text-center py-5">
     <div id="portfolio-gallery" class="container py-5">
         <div class="main-title my-5 py-5 position-relative">
             <h2 class="mt-5 text-uppercase">Recent Projects</h2>
@@ -421,42 +584,6 @@
     </div>
 </section>
 <!--Icons Section end-->
-<!--Portfolio Section begin-->
-<section class="contact-options-section text-center py-5">
-    <div id="contact-options" class="container py-5">
-        <div class="main-title my-5 py-5 position-relative">
-            <h2 class="mt-5 text-uppercase">get in touch with me</h2>
-            <p class="text-white-50 text-uppercase">I'm available on the following Platforms</p>
-        </div>
-        <div class="row mb-5">
-            <div class="col-6 platforms">
-                <a href="https://mostaql.com/" target="_blank">
-                    <img src="imgs/icons/mostaql-logo-white.svg" alt="platform-logo">
-                </a>
-                <a href="https://mostaql.com/" target="_blank">
-                    <img src="imgs/icons/mostaql-logo-white.svg" alt="platform-logo">
-                </a>
-            </div>
-            <div class="col-6 platforms">
-                <a href="https://mostaql.com/" target="_blank">
-                    <img src="imgs/icons/mostaql-logo-white.svg" alt="platform-logo">
-                </a>
-                <a href="https://mostaql.com/" target="_blank">
-                    <img src="imgs/icons/mostaql-logo-white.svg" alt="platform-logo">
-                </a>
-            </div>
-            <div class="col-12">
-                <h2 class="mt-5 text-uppercase fs-4">Other Contact options</h2>
-                <a href="mailto:info@example.com" id="contact-icon"
-                   class="btn btn-primary custom-btn rounded-pill text-uppercase fs-3 me-0 me-md-2 mb-1 mb-sm-0">send
-                    Email</a>
-                <a href="https://api.whatsapp.com/send?phone=0000000000&amp;text=Hi, I got this phone number from you website"
-                   id="Whatsapp" class="btn btn-primary whatsapp-btn rounded-pill text-uppercase fs-3">Whatsapp</a>
-            </div>
-        </div>
-    </div>
-</section>
-<!--Portfolio Section end-->
 <!--Testimony Section begin-->
 <section class="customers-section">
     <div id="customers-section" class="container client pb-5">
