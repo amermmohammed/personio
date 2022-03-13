@@ -1,14 +1,10 @@
 :root {
     --personio-primary-dark: #000000;
     --personio-secondary-dark: #14213D;
-    --personio-secondary-dark-transparent: #14213D0A;
     --personio-primary-light: #FFFFFF;
-    --personio-secondary-light: rgba(238, 237, 237, 0);
     --personio-outline: #FCA311;
-    --personio-outline-transparent: #FCA31119;
     --personio-darker-outline-transparent: #FCA3117F;
-    --personio-gray: #c5c4c4;
-
+    --personio-gray: rgba(197, 196, 196, 0.1);
 }
 
 /*Global components start*/
@@ -32,6 +28,14 @@ body {
     box-shadow: none;
 }
 
+h2, strong {
+    color: var(--personio-outline);
+}
+
+p {
+    color: var(--personio-primary-light);
+}
+
 /*Global components end*/
 
 /*Navbar begin*/
@@ -39,7 +43,6 @@ body {
 .navbar {
     background-color: var(--personio-primary-dark);
 }
-
 /*global navbar setting end*/
 
 /*navbar logo setting*/
@@ -56,6 +59,9 @@ body {
     letter-spacing: 0.1rem;
 }
 
+.lang-btn {
+    margin-right: 2.25rem;
+}
 /*navbar logo setting end*/
 
 /*navbar toggler setting*/
@@ -70,7 +76,7 @@ body {
 }
 
 .navbar .navbar-toggler[aria-expanded="true"] {
-    border-color: var(--personio-secondary-light);
+    border-color: var(--personio-primary-light);
 }
 
 /*navbar toggler setting end*/
@@ -101,10 +107,42 @@ body {
 
 /*Navbar end*/
 
+
+/*Color Picker Setting*/
+.themes-container {
+    color: var(--personio-primary-light);
+}
+.colors-pattern {
+    background: radial-gradient(#fadde1 , #ffc4d6, #ffa6c1, #ff87ab, #ff5d8f, #ff97b7, #ffacc5, #ffcad4, #f4acb7);
+    width: 12px;
+    height: 26px;
+    border-radius: 50%;
+}
+.color-btn {
+    color: var(--personio-primary-light);
+}
+/*Color Picker end*/
 /*Main section*/
 .landing {
     background-color: var(--personio-primary-dark);
     height: calc(100vh - 70px);
+    position: relative;
+    z-index: 1;
+}
+
+.landing::before {
+    position: absolute;
+    content: "";
+    background-image: url("../imgs/portrait.svg");
+    background-repeat: no-repeat;
+    background-position: center 100%;
+    background-size: contain;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: -1;
 }
 
 .landing .content-container {
@@ -112,7 +150,7 @@ body {
 }
 
 .landing .content-container p {
-    color: var(--personio-secondary-light);
+    color: var(--personio-outline);
 }
 
 /*Main section end*/
@@ -153,11 +191,11 @@ body {
 
 .features .icon-holder .service-count {
     font-size: 12rem;
-    color: var(--personio-outline-transparent);
+    color: var(--personio-gray);
 }
 
 .features .icon-holder .service-icon {
-    color: var(--personio-primary-light);
+    color: var(--personio-outline);
 }
 
 .features .feat h4 {
@@ -185,12 +223,17 @@ body {
     stroke: var(--personio-outline);
 }
 
+.features p.service-description  {
+    text-align: justify;
+}
+
 /*Services Section end*/
 
 /*Blog Section Setting*/
 .blog .main-title h2 {
     color: var(--personio-outline);
 }
+
 .blog .main-title::after {
     content: "";
     width: 120px;
@@ -275,10 +318,6 @@ body {
     transform: translateX(0);
 }
 
-.portfolio h2 {
-    color: var(--personio-primary-light);
-}
-
 .portfolio #portfolio-gallery .hidden {
     opacity: 0;
     height: 0;
@@ -297,6 +336,16 @@ body {
 /*Skills Section setting*/
 .progress-bar-color-control {
     background-color: var(--personio-primary-light);
+    color: var(--personio-primary-light);
+}
+.progressbar-text span{
+    color: var(--personio-outline);
+}
+.progressbar-text span{
+    color: var(--personio-outline);
+}
+
+.progressbar-text .skill-des{
     color: var(--personio-outline);
 }
 
@@ -304,26 +353,26 @@ body {
 
 /*Clients Section setting*/
 .client-section {
-    background-color: var(--personio-gray);
+    background-color: var(--personio-primary-dark);
 }
 
 .client-section .main-title h2 {
-    color: var(--personio-secondary-dark);
+    color: var(--personio-outline);
 }
 
 /* Slider */
 .slides-main-container {
-    height: 200px;
     display: flex;
     margin: auto;
+    height: 55px;
     overflow: hidden;
     position: relative;
+    background-color: white;
 }
 
 .slides-main-container .slides-holder {
     -webkit-animation: sliding 30s linear infinite;
     animation: sliding 30s linear infinite;
-    background-color: var(--personio-secondary-light);;
     display: -webkit-box;
     display: flex;
     align-items: center;
@@ -342,7 +391,6 @@ body {
     width: 90px;
     opacity: 1;
     transition: 1s ease;
-
 }
 
 .slides-main-container .slider-item img:hover {
@@ -384,10 +432,6 @@ body {
     background-repeat: no-repeat;
 }
 
-.contact-options-section h2 {
-    color: var(--personio-primary-light);
-}
-
 .contact-options-section .platforms {
     display: flex;
     flex-wrap: wrap;
@@ -408,11 +452,9 @@ body {
     width: 150px;
     height: 100%;
     padding: 1rem;
+    background-color: var(--personio-outline);
 }
 
-.contact-options-section img:hover {
-    box-shadow: 0 0 0 4px var(--personio-outline);
-}
 
 .contact-options-section .whatsapp-btn {
     background: #25d366;
@@ -449,6 +491,7 @@ body {
 #customers-section .carousel-inner .carousel-item .client-info {
     margin-top: 1rem;
     text-align: center;
+    color: white;
 }
 
 .review-card svg,
@@ -461,6 +504,7 @@ body {
     background-color: var(--personio-primary-dark);
     border-radius: 1.25rem;
     color: var(--personio-primary-light);
+    box-shadow:1px 1px 1px var(--personio-outline);
     height: auto;
 }
 
@@ -469,7 +513,7 @@ body {
     height: 0;
     border-left: 1rem solid transparent;
     border-right: 1rem solid transparent;
-    border-top: 1.25rem solid var(--personio-primary-dark);
+    border-top: 1.25rem solid var(--personio-outline);
 }
 
 /*customer-reviews Section end*/
@@ -555,7 +599,9 @@ footer .right-side a:hover {
         margin-top: 0.5rem;
         text-align: left;
     }
-
+    #customers-section .carousel-inner .carousel-item .client-info-ar {
+        text-align: right;
+    }
     .footer-content-container {
         justify-content: space-between;
     }
