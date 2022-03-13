@@ -1,12 +1,67 @@
-:root {
+:root,
+:root.default{
     --personio-primary-dark: #000000;
     --personio-secondary-dark: #14213D;
     --personio-primary-light: #FFFFFF;
     --personio-outline: #FCA311;
     --personio-darker-outline-transparent: #FCA3117F;
     --personio-gray: rgba(197, 196, 196, 0.1);
+    --main-bg: url('../imgs/bg1.svg');
 }
-
+:root.dark1{
+    --personio-primary-dark: #0b132b;
+    --personio-secondary-dark: #1c2541;
+    --personio-primary-light: #6fffe9;
+    --personio-outline: #fb8f67;
+    --personio-darker-outline-transparent: rgba(251,143,103,0.1);
+    --personio-gray: rgba(73,71,71,0.3);
+    --main-bg: url('../imgs/bg1b.svg');
+}
+:root.dark2{
+    --personio-primary-dark: #000;
+    --personio-secondary-dark: #000;
+    --personio-primary-light: #c2c3c4;
+    --personio-outline: #ae2012;
+    --personio-darker-outline-transparent: rgba(174,32,18,0.1);
+    --personio-gray: rgba(73,71,71,0.3);
+    --main-bg: url('../imgs/bg1c.svg');
+}
+:root.dark3{
+    --personio-primary-dark: #242423;
+    --personio-secondary-dark: #333533;
+    --personio-primary-light: #cfdbd5;
+    --personio-outline: #f5cb5c;
+    --personio-darker-outline-transparent: rgba(254,109,115,0.1);
+    --personio-gray: #494747;
+    --main-bg: url('../imgs/bg1a.svg');
+}
+:root.dark4{
+    --personio-primary-dark: #2b2a33;
+    --personio-secondary-dark: #42414d;
+    --personio-primary-light: #fff;
+    --personio-outline: #ECAA61;
+    --personio-darker-outline-transparent: rgba(251,143,103,0.1);
+    --personio-gray: #494747;
+    --main-bg: url('../imgs/bg1a.svg');
+}
+:root.light1{
+    --personio-primary-dark: #fff;
+    --personio-secondary-dark: #adb5bd;
+    --personio-primary-light: #000;
+    --personio-outline: #c22568;
+    --personio-darker-outline-transparent: rgba(251,143,103,0.1);
+    --personio-gray: #494747;
+    --main-bg: url('../imgs/bg1d.svg');
+}
+:root.light2{
+    --personio-primary-dark: #fff;
+    --personio-secondary-dark: #adb5bd;
+    --personio-primary-light: #000;
+    --personio-outline: #0d6efd;
+    --personio-darker-outline-transparent: rgba(251,143,103,0.1);
+    --personio-gray: #494747;
+    --main-bg: url('../imgs/bg1e.svg');
+}
 /*Global components start*/
 body {
     font-family: 'Cairo', sans-serif;
@@ -35,7 +90,13 @@ h2, strong {
 p {
     color: var(--personio-primary-light);
 }
-
+select {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    background-color: var(--personio-primary-dark);
+    color: var(--personio-primary-light);
+    border-radius: 0.25rem;
+}
 /*Global components end*/
 
 /*Navbar begin*/
@@ -151,6 +212,7 @@ p {
 
 .landing .content-container p {
     color: var(--personio-outline);
+    background: var(--personio-primary-dark);
 }
 
 /*Main section end*/
@@ -164,7 +226,7 @@ p {
 
 .features .container,
 .my-skills .container {
-    background-image: url("../imgs/bg1.svg");
+    background-image: var(--main-bg);
     background-position: top center;
     background-repeat: no-repeat;
 }
@@ -208,16 +270,20 @@ p {
 }
 
 .features .service-card:hover {
-    background-color: var(--personio-primary-dark);
     border: transparent;
-    border-radius: 50px;
+    border-radius: 30px;
 }
 
 .features .service-card:hover .service-description,
 .features .service-card:hover .service-icon {
     color: var(--personio-primary-light);
 }
-
+.features .feat {
+    background: var(--personio-primary-dark);
+    padding: 10px;
+    border-radius: 30px;
+    border: 2px solid var(--personio-outline);
+}
 .features .service-card:hover .service-count {
     color: transparent;
     stroke: var(--personio-outline);

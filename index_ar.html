@@ -27,8 +27,16 @@
         <a class="navbar-brand logo" href="#">
             <img loading="lazy"  class="light-logo" src="imgs/logo-light-ar.svg" alt="logo">
             <img loading="lazy"  class="dark-logo d-none" src="imgs/logo-dark-ar.svg" alt="logo">
-            <button type="button" class="btn btn-primary colors-pattern d-inline-block" data-bs-toggle="modal" data-bs-target="#color-pattern-container">
-            </button>
+            <select class="ms-3" name="theme-select" id="theme-select">
+                <option value="">اللون</option>
+                <option value="default">إفتراضي</option>
+                <option value="dark1">غامق1</option>
+                <option value="dark2">غامق2</option>
+                <option value="dark3">غامق3</option>
+                <option value="dark4">غامق4</option>
+                <option value="light1">فاتح1</option>
+                <option value="light2">فاتح2</option>
+            </select>
             <span class="d-block text-capitalize">شعاري</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main"
@@ -63,29 +71,6 @@
         </div>
     </div>
 </nav>
-<!--Color Picker Section begin-->
-<!-- Modal -->
-<div class="modal fade themes-container" id="color-pattern-container" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">قائمة السمات</h5>
-            </div>
-            <div class="modal-footer d-flex justify-content-center">
-                <button class="btn custom-btn" onclick="colorOption1();">غامق1</button>
-                <button class="btn custom-btn" onclick="colorOption2();">غامق2</button>
-                <button class="btn custom-btn" onclick="colorOption3();">غامق3</button>
-                <button class="btn custom-btn" onclick="colorOption4();">غامق4</button>
-                <button class="btn custom-btn" onclick="colorOption5();">فاتح1</button>
-                <button class="btn custom-btn" onclick="colorOption6();">فاتح2</button>
-                <button class="btn custom-btn" onclick="colorOption7();">فاتح3</button>
-                <button class="btn custom-btn" onclick="colorOption8();">اساسي</button>
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
-            </div>
-        </div>
-    </div>
-</div>
-<!--Color Picker Section end-->
 <!--Navbar end-->
 <!--Main section begin-->
 <section class="landing d-flex justify-content-center align-items-center">

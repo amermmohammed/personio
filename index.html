@@ -27,8 +27,16 @@
         <a class="navbar-brand logo" href="#">
             <img loading="lazy"  class="light-logo" src="imgs/logo-light-en.svg" alt="logo">
             <img loading="lazy"  class="dark-logo d-none" src="imgs/logo-dark-en.svg" alt="logo">
-            <button type="button" class="btn btn-primary colors-pattern d-inline-block" data-bs-toggle="modal" data-bs-target="#color-pattern-container">
-        </button>
+            <select class="ms-3" name="theme-select" id="theme-select">
+                <option value="">Theme</option>
+                <option value="default">default</option>
+                <option value="dark1">Dark1</option>
+                <option value="dark2">Dark2</option>
+                <option value="dark3">Dark3</option>
+                <option value="dark4">Dark4</option>
+                <option value="light1">light1</option>
+                <option value="light2">light2</option>
+            </select>
             <span class="d-block text-capitalize">my slogan</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main"
@@ -64,29 +72,7 @@
     </div>
 </nav>
 <!--Navbar end-->
-<!--Color Picker Section begin-->
-<!-- Modal -->
-<div class="modal fade themes-container" id="color-pattern-container" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Choose Style</h5>
-            </div>
-            <div class="modal-footer d-flex justify-content-center">
-                <button class="btn custom-btn" onclick="colorOption1();">dark1</button>
-                <button class="btn custom-btn" onclick="colorOption2();">dark2</button>
-                <button class="btn custom-btn" onclick="colorOption3();">dark3</button>
-                <button class="btn custom-btn" onclick="colorOption4();">dark4</button>
-                <button class="btn custom-btn" onclick="colorOption5();">light1</button>
-                <button class="btn custom-btn" onclick="colorOption6();">light2</button>
-                <button class="btn custom-btn" onclick="colorOption7();">light3</button>
-                <button class="btn custom-btn" onclick="colorOption8();">default</button>
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-<!--Color Picker Section end-->
+
 <!--Main section begin-->
 <section class="landing d-flex justify-content-center align-items-center">
     <div class="content-container text-center">
