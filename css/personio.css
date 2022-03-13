@@ -402,7 +402,7 @@ select {
 /*Skills Section setting*/
 .progress-bar-color-control {
     background-color: var(--personio-primary-light);
-    color: var(--personio-primary-light);
+    color: var(--personio-outline);
 }
 .progressbar-text span{
     color: var(--personio-outline);
