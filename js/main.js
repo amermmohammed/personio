@@ -35,7 +35,7 @@ AOS.init({
 /*Animate on Scroll End*/
 
 /*Portfolio setting Start*/
-$(".work-type-list li").click(function() {
+$('.work-type-list li').click(function() {
     $(this).addClass('active').siblings().removeClass('active');
     if ($(this).text() === 'Apps' || $(this).text() === 'تطبيقات') {
         $('#gallery-container div img').each( function (i) {
@@ -97,6 +97,9 @@ $(".work-type-list li").click(function() {
 });
 /*Portfolio setting Start*/
 
+$('#Whatsapp').attr('href', 'https://api.whatsapp.com/send?phone=0000000000&amp;text=Hi, I got this phone number from you website');
+
+
 /*Load more and load less function Start*/
 let countUp = 0;
 let firstRow = document.querySelectorAll('div.hiddenGallery1');
@@ -147,7 +150,7 @@ $('.skill').each(function (i) {
             value: '0'
         }
     });
-    let value = ($(this).attr('value') / 100);
+    let value = ($(this).attr('data-value') / 100);
     $(window).scroll(function () {
         if ($('#skills').is(':visible')) {
             circle.animate(value, {
