@@ -22,11 +22,80 @@ const getTheme = () => {
 getTheme();
 /*Patterns Toggle End*/
 
+/*scroll*/
+
+let scrollSpy = new bootstrap.ScrollSpy(document.body, {
+    target: '#NavBar'
+});
+
 /*Animate on Scroll Start*/
 AOS.init({
     duration: 1000,
 })
 /*Animate on Scroll End*/
+
+/*Portfolio setting Start*/
+$(".work-type-list li").click(function() {
+    $(this).addClass('active').siblings().removeClass('active');
+    if ($(this).text() === 'Apps' || $(this).text() === 'تطبيقات') {
+        $('#gallery-container div img').each( function (i) {
+            let attr = $(this).parent().attr('data-work');
+            if (typeof attr !== 'undefined' && attr !== false) {
+                if (attr === 'Apps' || attr === 'تطبيقات') {
+                    $(this).parent().css('transform', 'scale(1.05)')
+                    $(this).parent().css('opacity', '1')
+                } else {
+                    $(this).parent().css('opacity', '.1')
+                }
+            }
+        });
+    } else if ($(this).text() === 'Development' || $(this).text() === 'تطوير') {
+        $('#gallery-container div img').each( function (i) {
+            let attr = $(this).parent().attr('data-work');
+            if (typeof attr !== 'undefined' && attr !== false) {
+                if (attr === 'Development' || attr === 'تطوير') {
+                    $(this).parent().css('transform', 'scale(1.05)')
+                    $(this).parent().css('opacity', '1')
+                } else {
+                    $(this).parent().css('opacity', '.1')
+                }
+            }
+        });
+    } else if ($(this).text() === 'Design' || $(this).text() === 'تصميم') {
+        $('#gallery-container div img').each( function (i) {
+            let attr = $(this).parent().attr('data-work');
+            if (typeof attr !== 'undefined' && attr !== false) {
+                if (attr === 'Design' || attr === 'تصميم') {
+                    $(this).parent().css('transform', 'scale(1.05)')
+                    $(this).parent().css('opacity', '1')
+                } else {
+                    $(this).parent().css('opacity', '.1')
+                }
+            }
+        });
+    } else if ($(this).text() === 'Photography' || $(this).text() === 'تصوير') {
+        $('#gallery-container div img').each( function (i) {
+            let attr = $(this).parent().attr('data-work');
+            if (typeof attr !== 'undefined' && attr !== false) {
+                if (attr === 'Photography' || attr === 'تصوير') {
+                    $(this).parent().css('transform', 'scale(1.05)')
+                    $(this).parent().css('opacity', '1')
+                } else {
+                    $(this).parent().css('opacity', '.1')
+                }
+            }
+        });
+    } else {
+        $('#gallery-container div img').each( function (i) {
+            let attr = $(this).parent().attr('data-work');
+            if (typeof attr !== 'undefined' && attr !== false) {
+                $(this).parent().css('transform', 'scale(1)')
+                $(this).parent().css('opacity', '1')
+            }
+        });
+    }
+});
+/*Portfolio setting Start*/
 
 /*Load more and load less function Start*/
 let countUp = 0;
